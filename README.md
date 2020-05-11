@@ -90,8 +90,8 @@
    + copy keys & insert "config.inc.php"
       + Path : /opt/lampp/htdocs/dvwa/config
       ```
-      > site key (= Public Key): "6Ld5ovUUAAAAAAPf_9E9FoW4vo238IaxQe5IvLb3"
-      > Secret key : "6Ld5ovUUAAAAAMpDoLfy_larN8ChPUBD-C3BIsee"
+      > site key (= Public Key): "~~~"
+      > Secret key : "~~~"
       ```
    + delete password for mysql in "config.inc.php"
 2. Set Privilege "Write"
