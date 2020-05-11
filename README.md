@@ -1,20 +1,29 @@
-### Confituration Command Steps for Hangul (Input / Output)
-1. sudo apt-get update -y
-2. sudo apt-get install -y fonts-nanum
-3. sudo apt-get install -y fonts-nanum*
-4. fc-cache -f -v
-5. sudo apt-get install -y nabi
-6. sudo apt-get install -y im-config
-7. sudo apt-get install -y zenity
-8. sudo apt-get install -y fcitx-lib*
-9. sudo apt-get install -y fcitx-hangul
-10. im-config
-   * confirm
-   * yes
-   * select "fcitx" & confirm
-11. fcitx-configtool
-   * "Input Method" : Hangul
-   * Keyboard : Korean-Korean(101/104 key)
+### Configuration Command Steps for Hangul (Input / Output)
+1. Init Default
+   > sudo apt-get update -y
+   > fc-cache -f -v
+2. Install hangul 
+   > sudo apt-get install -y fonts-nanum
+   > sudo apt-get install -y fonts-nanum*
+   > sudo apt-get install -y nabi
+   > sudo apt-get install -y im-config
+   > sudo apt-get install -y zenity
+   > sudo apt-get install -y fcitx-lib*
+   > sudo apt-get install -y fcitx-hangul
+3. Setup im-config
+   - execute im-config
+      > confirm
+      > yes
+      > select "fcitx" & confirm
+4. Config Hangul
+   - execute fcitx-configtool
+      > "Input Method" : Hangul, Keyboard-Korean(101/104 Key), Keyboard-Korean, Keyboard-English(US)
+      > Keyboard : Korean-Korean(101/104 key)
+      > Set HotKey on "Global Config"
+5. (Optional) Config Hanja
+   - exeute fcitx-configtool
+      > Select "Hangul" on "Addon" & Configure
+      > Set HotKey for Handja
 
 
 ### Install XAMPP
@@ -67,5 +76,3 @@
    > sudo chmod 777 /opt/lampp/htdocs/dvwa/hackable/uploads/
    > sudo chmod 777 /opt/lampp/htdocs/dvwa/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt
 3. Create Database just "click" next button
-
-   
