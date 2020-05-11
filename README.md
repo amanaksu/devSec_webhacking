@@ -37,7 +37,7 @@
 
 
 ### Install XAMPP
-1. Download XAMPP file from [XAMPP|https://www.apachefriends.org/index.html] site.
+1. Download XAMPP file from [XAMPP][1] site.
    + check the PHP version. Must be PHP5.
 2. Change downloaded File's Execute Privilege & Execute
    + Installed Path : /opt/lampp
@@ -62,7 +62,7 @@
 
 
 ### Install DVWA
-1. Download DVWA 1.9 source code on [Github|https://github.com/ethicalhack3r/DVWA/releases]
+1. Download DVWA 1.9 source code on [Github][2]
 2. Unzip
    ```
    > Unzip DVWA-1.9.zip
@@ -81,7 +81,7 @@
 
 ### Install DVWA for Not Completed Setup
 1. Setup reCAPTCHA ( dependency : google accounts. )
-   + login [reCAPTCHA|https://www.google.com/recaptcha/intro/v3.html] site.
+   + login [reCAPTCHA][3] site.
    + input the label, domain & confirm
       ```
       > label : dvwa
@@ -93,10 +93,16 @@
       > site key (= Public Key): "6Ld5ovUUAAAAAAPf_9E9FoW4vo238IaxQe5IvLb3"
       > Secret key : "6Ld5ovUUAAAAAMpDoLfy_larN8ChPUBD-C3BIsee"
       ```
-   + edit password for mysql in "config.inc.php"
+   + delete password for mysql in "config.inc.php"
 2. Set Privilege "Write"
    ```
    > sudo chmod 777 /opt/lampp/htdocs/dvwa/hackable/uploads/
    > sudo chmod 777 /opt/lampp/htdocs/dvwa/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt
    ```
 3. Create Database just "click" next button
+
+
+
+[1]:https://www.apachefriends.org/index.html
+[2]:https://github.com/ethicalhack3r/DVWA/releases
+[3]:https://www.google.com/recaptcha/intro/v3.html
