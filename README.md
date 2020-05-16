@@ -72,11 +72,17 @@
    ```
    > mv /home/kali/Downloads/DVWA /opt/lampp/htdocs/dvwa
    ```
-4. Connect DVWA
+4. start Web Server & DB Server
+5. Connect DVWA
    + result "Green" is Completed, but "Red" is not Completed in Setup Check
    ```
    > (Web Browser) localhost/dvwa
    ```
+6. restart Web Server
+   ```
+   > /opt/lampp/lampp restart
+   ```
+
 
 
 ### Install DVWA for Not Completed Setup
@@ -100,7 +106,6 @@
    > sudo chmod 777 /opt/lampp/htdocs/dvwa/external/phpids/0.6/lib/IDS/tmp/phpids_log.txt
    ```
 3. Create Database just "click" next button
-
 
 
 [1]:https://www.apachefriends.org/index.html
